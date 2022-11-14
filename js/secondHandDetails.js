@@ -4,7 +4,7 @@ var mySwiper = new Swiper(".swiper", {
   autoplay: {
     delay: 3000,
     stopOnLastSlide: false,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
 
   // 如果需要分页器
