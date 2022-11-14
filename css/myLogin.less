@@ -1,59 +1,58 @@
 /* 我的登录样式 */
-.borderBottom(@px:1px,@color:#dcdcdc){
-    border-bottom: @px solid @color;
+.borderBottom(@px:1px,@color:#dcdcdc) {
+  border-bottom: @px solid @color;
 }
-.main{
-    position: relative;
-    .bg{
-        width: 100%;
-        vertical-align: middle;
-    }
-    .logo{
-        position: absolute;
-        width: 6.5rem;
-        height: 6.5rem;
-        left: 15rem;
-        top: 3rem;
-    }
-    .login{
-        position: absolute;
-        left: 10.6rem;
-        top: 12rem;
-        color: white;
+.main {
+  position: relative;
+  .bg {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .logo {
+    position: absolute;
+    width: 6.5rem;
+    height: 6.5rem;
+    left: 15rem;
+    top: 3rem;
+  }
+  .login {
+    position: absolute;
+    left: 10.6rem;
+    top: 12rem;
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+.attention {
+  padding: 0 2rem;
+  background-color: #ffffff;
+  ul {
+    li {
+      height: 5rem;
+      line-height: 5rem;
+      .borderBottom();
+      background: url(../images/my/right.png) no-repeat right center;
+      background-size: 0.8rem 1.8rem;
+      display: flex;
+      align-items: center;
+      a {
+        flex: 1;
+        color: #666666;
         font-size: 1.5rem;
+      }
     }
-}
-.attention{
-    padding: 0 2rem;
-    background-color: #ffffff;
-    ul{
-        li{
-            height: 5rem;
-            line-height: 5rem;
-            .borderBottom();
-            background: url(../images/my/right.png) no-repeat right center;
-            background-size: 0.8rem 1.8rem;
-            img{
-                width: 2rem;
-                height: 2rem;
-            }
-            a{
-                color: #666666;
-                font-size: 1.5rem;
-            }
-        }
-    }
+  }
 }
 
-.logout{
-    display: inline-block;
-    width: 35rem;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    background-color: #ffffff;
-    margin: 3rem 1rem;
-    text-align: center;
-    color: #ff8a00;
-    font-size: 1.4rem;
-    border: 2px solid #e7e7e7;
+.logout {
+  display: inline-block;
+  width: 35rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background-color: #ffffff;
+  margin: 3rem 1rem;
+  text-align: center;
+  color: #ff8a00;
+  font-size: 1.4rem;
+  border: 2px solid #e7e7e7;
 }
