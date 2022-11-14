@@ -1,0 +1,46 @@
+/* 公共尾部样式 */
+footer {
+  background-color: #2f3130;
+  padding: 0 2rem ;
+}
+footer h2 {
+  font-size: 1.5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: #939494;
+  border-bottom: 2px solid #393b3a;
+}
+footer h2 a {
+  color: #939494;
+}
+footer .firm {
+  padding: 2rem 0;
+}
+footer .firm ul {
+  display: flex;
+}
+footer .firm ul li {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+footer .firm ul li a {
+  color: #939494;
+  font-size: 1.4rem;
+}
+footer .firm ul li img {
+  width: 2.4rem;
+  height: 2.7rem;
+  margin-right: 1.5rem;
+}
+footer .text {
+  margin-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+footer .text p {
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: #939494;
+}
