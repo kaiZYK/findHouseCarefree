@@ -1,0 +1,25 @@
+/* 面包屑部分 */
+.crumbs {
+  width: 100%;
+  height: 4rem;
+  background-color: #ffffff;
+}
+.crumbs ul {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.crumbs ul li {
+  width: auto;
+  margin-left: 0.3rem;
+}
+.crumbs ul li:first-of-type > a {
+  font-weight: 600;
+}
+.crumbs ul li a {
+  font-size: 1.4rem;
+  color: #000000;
+}

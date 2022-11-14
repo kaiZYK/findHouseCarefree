@@ -1,0 +1,54 @@
+/* 房子部分 */
+.house {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0rem 2.5rem;
+}
+.house ul {
+  width: 100%;
+  height: auto;
+}
+.house ul li {
+  width: 100%;
+  height: 15rem;
+  box-sizing: border-box;
+  padding: 2.5rem 0rem;
+  border-bottom: 0.1rem solid #ff8a00;
+}
+.house ul li:last-of-type {
+  border-bottom: none;
+}
+.house ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #000000;
+}
+.house ul li a img {
+  width: 10rem;
+  margin-right: 1.5rem;
+}
+.house ul li a div {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.house ul li a div h2,
+.house ul li a div p {
+  width: 100%;
+}
+.house ul li a div h2 {
+  font-size: 1.6rem;
+}
+.house ul li a div p {
+  font-size: 1.4rem;
+}
+.house ul li a div p span {
+  margin-left: 2.5rem;
+  font-weight: 600;
+  color: #ff8a00;
+}
