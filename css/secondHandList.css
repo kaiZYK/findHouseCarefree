@@ -1,0 +1,10 @@
+/* 房子部分 */
+.house ul li a div p {
+  color: #b0b0b0;
+}
+.house ul li a div p:first-of-type {
+  color: #000000;
+}
+.house ul li a div p span {
+  margin-left: 0rem;
+}
