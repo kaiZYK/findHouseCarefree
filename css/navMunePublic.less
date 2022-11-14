@@ -1,0 +1,262 @@
+// 字体颜色
+@color-gary: #666666;
+@color-orange: #ff8a00;
+
+// 背景颜色
+@bgc-white: #ffffff;
+
+/* 导航菜单部分 */
+.navMune {
+  width: 100%;
+  height: 4.5rem;
+  background-color: @bgc-white;
+  border: 0.1rem solid #cccccc;
+  & > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: @bgc-white;
+    li {
+      width: auto;
+      height: auto;
+      a {
+        display: block;
+        width: 5rem;
+        color: @color-gary;
+        font-weight: 600;
+        font-size: 1.6rem;
+        overflow: hidden;
+        position: relative;
+        span {
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          position: absolute;
+          left: 3.5rem;
+          top: 0.3rem;
+          box-sizing: border-box;
+          border-style: solid;
+          border-width: 0.5rem;
+          border-color: #cccccc transparent transparent transparent;
+        }
+      }
+    }
+  }
+}
+
+/* 遮罩部分 */
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: #7a7a7a;
+  opacity: 0.5;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: none;
+}
+
+/* 导航菜单选择部分 */
+.navMuneSelect {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: #f0f0f0;
+  display: none;
+  & > ul {
+    height: 4.5rem;
+  }
+
+  /* 区域部分 */
+  .areaSelect {
+    width: 100%;
+    height: auto;
+    display: flex;
+    // display: none;
+    & > ul {
+      width: 9.4rem;
+      height: 9rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        width: 100%;
+        height: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          display: block;
+          width: 5rem;
+          color: @color-gary;
+          font-weight: 600;
+          font-size: 1.6rem;
+        }
+        &:first-of-type {
+          background-color: @bgc-white;
+          a {
+            color: @color-orange;
+          }
+        }
+      }
+    }
+    & > div {
+      flex: 1;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      background-color: @bgc-white;
+      ul {
+        width: auto;
+        height: auto;
+        li {
+          width: auto;
+          height: 4.7rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a {
+            font-size: 1.4rem;
+            color: @color-gary;
+          }
+        }
+      }
+    }
+  }
+
+  /* 价格选择部分 */
+  .priceSelect {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0rem 2rem;
+    background-color: @bgc-white;
+    display: flex;
+    display: none;
+    & > ul {
+      width: 100%;
+      height: auto;
+      & > li {
+        width: 100%;
+        height: 4.8rem;
+        box-sizing: border-box;
+        padding: 1.6rem 0rem;
+        border-bottom: 0.1rem solid #cccccc;
+        &:last-of-type {
+          border-bottom: none;
+        }
+        & > a {
+          font-size: 1.4rem;
+          color: @color-gary;
+        }
+      }
+    }
+  }
+
+  /* 房型选择部分 */
+  .houseTypeSelect {
+    height: auto;
+    display: flex;
+    display: none;
+    ul {
+      li {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: 1.4rem;
+          color: #000000;
+          vertical-align: middle;
+        }
+        input {
+          width: 2rem;
+          height: 2rem;
+          outline: none;
+          border: 0.1rem solid #c5c3c3;
+          vertical-align: middle;
+          margin-right: 2rem;
+        }
+
+        &:nth-last-of-type(2) {
+          border-bottom: none;
+        }
+        &:last-of-type {
+          height: 6.5rem;
+          border-bottom: none;
+          padding-bottom: 2rem;
+          padding: 0;
+          button {
+            width: 100%;
+            height: 4.8rem;
+            background-color: @color-orange;
+            outline: none;
+            border: none;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: #ffffff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  /* 更多选择部分 */
+  .moreSelect {
+    display: flex;
+    display: none;
+    & > ul {
+      & > li {
+        height: auto;
+        &:last-of-type {
+          height: 10rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: space-evenly;
+          border-bottom: none;
+          padding-bottom: 2rem;
+          padding: 0;
+          a {
+          }
+          button {
+            width: 100%;
+            height: 4.8rem;
+            background-color: @color-orange;
+            outline: none;
+            border: none;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: #ffffff;
+            cursor: pointer;
+          }
+        }
+        & > ul {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+          & > li {
+            width: 7.85rem;
+            height: 3.3rem;
+            margin: 1rem 0.5rem 0rem 0rem;
+            box-sizing: border-box;
+            padding: 0.6rem 0rem;
+            text-align: center;
+            border: 0.2rem solid #e3e3e3;
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  color: @color-orange !important;
+  span {
+    top: 0rem !important;
+    border-color: transparent transparent @color-orange transparent !important;
+  }
+}
