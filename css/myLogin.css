@@ -1,0 +1,53 @@
+/* 我的登录样式 */
+.main {
+  position: relative;
+}
+.main .bg {
+  width: 100%;
+  vertical-align: middle;
+}
+.main .logo {
+  position: absolute;
+  width: 6.5rem;
+  height: 6.5rem;
+  left: 15rem;
+  top: 3rem;
+}
+.main .login {
+  position: absolute;
+  left: 10.6rem;
+  top: 12rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.attention {
+  padding: 0 2rem;
+  background-color: #ffffff;
+}
+.attention ul li {
+  height: 5rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #dcdcdc;
+  background: url(../images/my/right.png) no-repeat right center;
+  background-size: 0.8rem 1.8rem;
+}
+.attention ul li img {
+  width: 2rem;
+  height: 2rem;
+}
+.attention ul li a {
+  color: #666666;
+  font-size: 1.5rem;
+}
+.logout {
+  display: inline-block;
+  width: 35rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background-color: #ffffff;
+  margin: 3rem 1rem;
+  text-align: center;
+  color: #ff8a00;
+  font-size: 1.4rem;
+  border: 2px solid #e7e7e7;
+}
