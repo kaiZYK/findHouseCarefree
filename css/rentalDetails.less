@@ -1,0 +1,211 @@
+.borderBottom(@px:1px,@color:#dcdcdc){
+    border-bottom: @px solid @color;
+}
+.type{
+    background-color: #ffffff;
+    border-top: 2px solid #ebebeb;
+    margin-top: 1.5rem;
+    .borderBottom();
+    padding: 0 2rem;
+}
+/* swiper轮播图部分 */
+.swiper {
+    width: 37.5rem;
+    height: 22rem;
+    position: relative;
+    img{
+        width: 37.5rem;
+        height: 22rem;
+    }
+    .share{
+        position: absolute;
+        bottom: 1rem;
+        right: 0;
+        font-size: 1.4rem;
+        color: white;
+        width: 6rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        background-color: #282520;
+        z-index: 2;
+    }
+}
+/* 关注  */
+.focus{
+    height: 9rem;
+    background-color: #f9f9f9;
+    display: flex;
+    h2{
+        flex: 3.5;
+        line-height: 2.5rem;
+        margin-top: 2rem;
+        padding-left: 2rem;
+        font-size: 2rem;
+    }
+    a{
+        flex: 1;
+        text-align: center;
+        border-left: 1px solid #e3e3e3;
+        background: url(../images/rental/xin.png) no-repeat 3rem 2rem;
+        background-size: 2rem 2rem;
+        padding-top: 4.5rem;
+        font-size: 1.6rem;
+        color: #666666;
+    }
+}
+/* 租金 房型 面积  */
+.rent{
+    display: flex;
+    padding: 3rem 0;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    li{
+        flex: 1;
+        text-align: center;
+        font-size: 1.4rem;
+        border-right: 1px solid #dcdcdc;
+        p:nth-of-type(2){
+            color: #ff8a00;
+            margin-top: 0.7rem;
+        }
+    }
+}
+/* 房源信息 */
+.houseType{
+    background-color: #ffffff;
+    .borderBottom();
+    padding: 0 2rem;
+    ul{
+        li{
+            font-size: 1.5rem;
+            height: 6rem;
+            line-height: 6rem;
+            .borderBottom();
+            span{
+                display: inline-block;
+                width: 49%;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+/* 经纪人房评 */
+.real{
+    margin: 1rem;
+    border: 1px solid #e3e3e3;
+    .type;
+    h2{
+        color: #ff9326;
+        font-size: 2rem;
+        line-height: 6rem;
+        .borderBottom();
+        background: url(../images/rental/right.png) no-repeat 30rem center;
+        background-size: 1rem 2rem;
+    }
+    p:nth-of-type(1){
+        line-height: 2.5rem;
+        padding: 1.6rem 0;
+        font-size: 1.4rem;
+        .borderBottom();
+    }
+    p:nth-of-type(2){
+        text-align: center;
+        color: #999999;
+        line-height: 6rem;
+        font-size: 1.3rem;
+    }
+}
+
+/* 位置及周边 */
+.map{
+    margin: 1rem;
+    border: 1px solid #e3e3e3;
+    .type;
+    h2{
+        color: #ff9326;
+        font-size: 2rem;
+        line-height: 6rem;
+        .borderBottom();
+        background: url(../images/rental/right.png) no-repeat 30rem center;
+        background-size: 1rem 2rem;
+    }
+    div{
+        margin: 2rem auto;
+        width: 31rem;
+        border: 1px solid #dcdcdc;
+        h3{
+            font-size: 1.6rem;
+            height: 3rem;
+            line-height: 3rem;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+/* 小区成交历史 */
+.history{
+    margin: 1rem;
+    border: 1px solid #e3e3e3;
+    .type;
+    h2{
+        color: #ff9326;
+        font-size: 2rem;
+        line-height: 6rem;
+        .borderBottom();
+        background: url(../images/rental/right.png) no-repeat 30rem center;
+        background-size: 1rem 2rem;
+    }
+    p{
+        padding: 1rem;
+        line-height: 2rem;
+        font-size: 1.4rem;
+        span{
+            color: #de6843;
+        }
+    }
+}
+
+/* user张三 */
+.user{
+    background-color: #ffffff;
+    height: 7rem;
+    display: flex;
+    .left{
+        display: flex;
+        flex: 7;
+        padding: 1rem;
+        img{
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+    }
+    .right{
+        display: flex;
+        flex: 4;
+        margin-top: 1rem;
+        a{
+            display: inline-block;
+            padding-top: 1rem;
+            flex: 1;
+            line-height: 6rem;
+            font-size: 1.5rem;
+        }
+        a:nth-of-type(1){
+            color: #5dcb96;
+            background: url(../images/rental/icon1.png) no-repeat;
+            background-size: 3rem 3rem;
+        }
+          a:nth-of-type(2){
+            color: #5baede;
+            background: url(../images/rental/icon2.png) no-repeat;
+            background-size: 3rem 3rem;
+        }
+    }
+}
