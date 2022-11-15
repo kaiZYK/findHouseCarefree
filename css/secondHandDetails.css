@@ -158,6 +158,10 @@
 .room .house ul li a div h2,
 .room .house ul li a div p {
   width: 100%;
+  overflow: hidden;
+  width: 22rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .room .house ul li a div h2:nth-of-type(1),
 .room .house ul li a div p:nth-of-type(1) {
