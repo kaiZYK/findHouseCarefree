@@ -3,8 +3,10 @@ header {
   height: 5rem;
   background-color: #ff8a00;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  padding: 0rem 4rem;
 }
 header a {
   width: 12rem;

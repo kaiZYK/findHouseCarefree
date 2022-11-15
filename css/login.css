@@ -1,0 +1,115 @@
+/* 登录部分 */
+.login {
+  width: 100%;
+  height: auto;
+  /* 登录头部 */
+  /* 登录主体 */
+  /* 登录底部 */
+}
+.login .loginHeader {
+  width: 100%;
+  height: 5.5rem;
+  background-color: #ffffff;
+  border-top: 0.1rem solid #c5c5c5;
+  box-sizing: border-box;
+  display: flex;
+}
+.login .loginHeader a {
+  flex: 1;
+  font-size: 1.4rem;
+  color: #000000;
+  text-align: center;
+  line-height: 5.5rem;
+  border-bottom: 0.5rem solid #d1d1d1;
+}
+.login .authCodeMain {
+  display: none;
+}
+.login .membersMain,
+.login .authCodeMain {
+  width: 100%;
+  height: auto;
+}
+.login .membersMain > div,
+.login .authCodeMain > div {
+  width: 100%;
+  height: 5.3rem;
+  position: relative;
+  border-bottom: 0.1rem solid #d1d1d1;
+}
+.login .membersMain > div:first-of-type,
+.login .authCodeMain > div:first-of-type {
+  border-top: 0.1rem solid #d1d1d1;
+}
+.login .membersMain > div input,
+.login .authCodeMain > div input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  text-indent: 1.5rem;
+}
+.login .membersMain > div span,
+.login .authCodeMain > div span {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 13rem;
+  text-align: center;
+  line-height: 5rem;
+}
+.login .membersMain > div > button,
+.login .authCodeMain > div > button {
+  width: 10rem;
+  height: 4rem;
+  outline: none;
+  border: 0.1rem solid #d1d1d1;
+  color: #666666;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+}
+.login .membersMain > .btn,
+.login .authCodeMain > .btn {
+  width: 100%;
+  height: 9rem;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-bottom: none;
+}
+.login .membersMain > .btn > button,
+.login .authCodeMain > .btn > button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #ff8a00;
+  color: #ffffff;
+  font-size: 2.2rem;
+  position: relative;
+  top: 0rem;
+  right: 0rem;
+}
+.login .loginFooter {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.login .loginFooter a {
+  font-size: 1.4rem;
+}
+.login .loginFooter a:first-of-type {
+  color: #ff8a00;
+}
+.login .loginFooter a:last-of-type {
+  color: #666666;
+}
+.active {
+  border-bottom: 0.5rem solid #ff8a00 !important;
+}
