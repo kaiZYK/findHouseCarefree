@@ -63,7 +63,7 @@ var timerAuthCode = null;
 var randomNumber = [];
 // 验证码次数 用于判断点击按钮没有
 var indexAuthCode = 0;
-authCodeBtn.addEventListener("click", function (e) {
+touch.on(authCodeBtn, "tap", function (e) {
   e = e || window.event;
   window.event ? (event.cancelBubble = "true") : event.stopPropagation();
   if (telBool) {
@@ -121,8 +121,7 @@ authCodeBtn.addEventListener("click", function (e) {
     });
   }
 });
-
-authCode.addEventListener("click", function (e) {
+touch.on(authCode, "tap", function (e) {
   e = e || window.event;
   window.event ? (event.cancelBubble = "true") : event.stopPropagation();
 });
@@ -209,7 +208,7 @@ password.addEventListener("blur", function () {
 });
 
 // 注册功能
-registerBtn.addEventListener("click", function () {
+touch.on(registerBtn, "tap", function () {
   // 当手机号码 验证码 密码 的布尔值都为true时 才能完成注册
   if (telBool == true && authCodeBool == true && passwordBool == true) {
     alert("注册成功");
