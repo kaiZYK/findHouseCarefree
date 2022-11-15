@@ -48,6 +48,7 @@
   border: none;
   outline: none;
   text-indent: 1.5rem;
+  font-size: 1.4rem;
 }
 .login .membersMain > div span,
 .login .authCodeMain > div span {
@@ -59,6 +60,7 @@
   left: 13rem;
   text-align: center;
   line-height: 5rem;
+  font-size: 1.4rem;
 }
 .login .membersMain > div > button,
 .login .authCodeMain > div > button {
@@ -71,6 +73,7 @@
   position: absolute;
   top: 0.5rem;
   right: 2rem;
+  font-size: 1.4rem;
 }
 .login .membersMain > .btn,
 .login .authCodeMain > .btn {
