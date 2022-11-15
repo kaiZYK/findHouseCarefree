@@ -33,6 +33,11 @@
   display: flex;
   align-items: center;
 }
+.attention ul li img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
 .attention ul li a {
   flex: 1;
   color: #666666;
