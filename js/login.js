@@ -42,7 +42,6 @@ tel.addEventListener("focus", function () {
 });
 tel.addEventListener("blur", function () {
   let registerTel = window.localStorage.getItem("tel");
-  console.log(registerTel);
   // 判断是否已经注册并且输入的手机号为注册的手机号
   if (registerTel != null && tel.value == registerTel) {
     membersMainSpans[0].className = "success";
