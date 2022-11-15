@@ -30,9 +30,7 @@
   }
 
   /* 登录主体 */
-  .membersMain {
-    // display: none;
-  }
+
   .authCodeMain {
     display: none;
   }
@@ -48,12 +46,19 @@
       &:first-of-type {
         border-top: 0.1rem solid #d1d1d1;
       }
+      &:nth-of-type(1) > span {
+        left: 11.3rem;
+      }
+      &:nth-of-type(2) > span {
+        left: 16rem;
+      }
       input {
         width: 100%;
         height: 100%;
         border: none;
         outline: none;
         text-indent: 1.5rem;
+        font-size: 1.4rem;
       }
       span {
         display: inline-block;
@@ -64,6 +69,7 @@
         left: 13rem;
         text-align: center;
         line-height: 5rem;
+        font-size: 1.4rem;
       }
       & > button {
         width: 10rem;
@@ -75,6 +81,7 @@
         position: absolute;
         top: 0.5rem;
         right: 2rem;
+        font-size: 1.4rem;
       }
     }
     & > .btn {
@@ -119,4 +126,10 @@
 }
 .active {
   border-bottom: 0.5rem solid @color-orange !important;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
 }

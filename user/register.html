@@ -28,7 +28,7 @@
       </a>
       <!-- 我的 app部分 -->
       <div class="app">
-        <a href="../my/my.html">
+        <a href="##" class="myBtn">
           <img src="../images/index/my.jpg" alt="" />
         </a>
         <a href="##">
@@ -53,25 +53,35 @@
       <!-- 验证码登录主体 -->
       <div class="authCodeMain">
         <div>
-          <input type="tel" placeholder="请输入手机号码" />
+          <input type="tel" placeholder="请输入手机号码" class="tel" />
           <span></span>
-          <button>发送验证码</button>
+          <button class="auth-code-btn">发送验证码</button>
         </div>
         <div>
-          <input type="text" placeholder="请输入短信中的验证码" />
+          <input
+            type="text"
+            placeholder="请输入短信中的验证码"
+            class="auth-code"
+          />
           <span></span>
         </div>
         <div>
-          <input type="password" placeholder="请输入新密码" />
+          <input type="password" placeholder="请输入新密码" class="password" />
           <span></span>
         </div>
         <div class="btn">
-          <button>立即注册</button>
+          <button class="register-btn">立即注册</button>
         </div>
       </div>
     </div>
 
     <!-- 引入setRem.js -->
     <script src="../js/setRem.js"></script>
+    <!-- 引入touch库 -->
+    <script src="../js/touch.min.js"></script>
+    <!-- 引入找回密码脚本 -->
+    <script src="../js/register.js"></script>
+    <!-- 引入公共头部脚本 -->
+    <script src="../js/headerPublic.js"></script>
   </body>
 </html>

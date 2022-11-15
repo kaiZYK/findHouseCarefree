@@ -13,12 +13,13 @@
   left: 15rem;
   top: 3rem;
 }
-.main .login {
+.main .user {
   position: absolute;
-  left: 10.6rem;
-  top: 12rem;
+  left: 50%;
+  top: 11rem;
   color: white;
   font-size: 1.5rem;
+  transform: translateX(-50%);
 }
 .attention {
   padding: 0 2rem;
@@ -32,6 +33,11 @@
   background-size: 0.8rem 1.8rem;
   display: flex;
   align-items: center;
+}
+.attention ul li img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
 }
 .attention ul li a {
   flex: 1;

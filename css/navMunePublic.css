@@ -4,6 +4,7 @@
   height: 4.5rem;
   background-color: #ffffff;
   border: 0.1rem solid #cccccc;
+  box-sizing: border-box;
 }
 .navMune > ul {
   width: 100%;
@@ -224,7 +225,7 @@
   flex-wrap: wrap;
 }
 .navMuneSelect .moreSelect > ul > li > ul > li {
-  width: 7.85rem;
+  width: 7.8rem;
   height: 3.3rem;
   margin: 1rem 0.5rem 0rem 0rem;
   box-sizing: border-box;
