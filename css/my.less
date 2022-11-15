@@ -1,0 +1,76 @@
+/* 我的页面样式 */
+.borderBottom(@px:1px,@color:#dcdcdc) {
+  border-bottom: @px solid @color;
+}
+.header {
+  position: relative;
+  .bg {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .app {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    a {
+      color: #ffffff;
+      height: 2rem;
+      display: inline-block;
+      padding-top: 2.5rem;
+      text-align: center;
+      margin-left: 2rem;
+      font-size: 1.3rem;
+      &:nth-of-type(1) {
+        background: url(../images/my/urse.png) no-repeat 3px 0px;
+        background-size: 2rem 2rem;
+      }
+      &:nth-of-type(2) {
+        background: url(../images/my/down.png) no-repeat 3px 0px;
+        background-size: 2rem 2rem;
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    width: 6.5rem;
+    height: 6.5rem;
+    left: 15rem;
+    top: 7rem;
+  }
+  .login {
+    position: absolute;
+    left: 14.6rem;
+    top: 15rem;
+    color: white;
+    padding: 0.7rem 2rem;
+    font-size: 1.5rem;
+    border: 1px solid #ffffff;
+  }
+}
+
+.attention {
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+  background-color: #ffffff;
+  ul {
+    li {
+      height: 5.5rem;
+      line-height: 5.5rem;
+      .borderBottom();
+      background: url(../images/my/right.png) no-repeat right center;
+      background-size: 0.8rem 1.8rem;
+      display: flex;
+      align-items: center;
+      img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+      }
+      a {
+        flex: 1;
+        color: #666666;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

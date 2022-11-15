@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>登录</title>
+    <!-- 引入公共reset重置默认样式css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- 引入公共头部css -->
+    <link rel="stylesheet" href="../css/headerPublic.css" />
+    <!-- 引入公共面包屑样式 -->
+    <link rel="stylesheet" href="../css/crumbsPublic.css" />
+    <!-- 引入登录页样式 -->
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+
+  <body>
+    <!-- 公共头部 -->
+    <header>
+      <a href="../index.html">
+        <img src="../images/index/logo.jpg" alt="" />
+      </a>
+      <!-- 我的 app部分 -->
+      <div class="app">
+        <a href="../my/my.html">
+          <img src="../images/index/my.jpg" alt="" />
+        </a>
+        <a href="##">
+          <img src="../images/index/xiazai.jpg" alt="" />
+        </a>
+      </div>
+    </header>
+
+    <!-- 面包屑部分 -->
+    <div class="crumbs">
+      <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li><span>&gt;</span></li>
+        <li><a href="../my/my.html">我的</a></li>
+        <li><span>&gt;</span></li>
+        <li><a href="./login.html">登录</a></li>
+      </ul>
+    </div>
+
+    <!-- 登录部分 -->
+    <div class="login">
+      <!-- 登录头部 -->
+      <div class="loginHeader">
+        <a href="##" class="active">普通登录</a>
+        <a href="##">验证码快捷登录</a>
+      </div>
+
+      <!-- 普通登录主体 -->
+      <div class="membersMain">
+        <div>
+          <input type="tel" placeholder="请输入手机号码" />
+          <span></span>
+        </div>
+        <div>
+          <input type="password" placeholder="请输入密码" />
+          <span></span>
+        </div>
+        <div class="btn">
+          <button>立即登录</button>
+        </div>
+      </div>
+
+      <!-- 验证码登录主体 -->
+      <div class="authCodeMain">
+        <div>
+          <input type="tel" placeholder="请输入手机号码" />
+          <span></span>
+          <button>发送验证码</button>
+        </div>
+        <div>
+          <input type="text" placeholder="请输入短信中的验证码" />
+          <span></span>
+        </div>
+        <div class="btn">
+          <button>验证并登录</button>
+        </div>
+      </div>
+
+      <!-- 登录底部 -->
+      <div class="loginFooter">
+        <a href="./register.html">立即注册</a>
+        <a href="./findPassword.html">忘记密码</a>
+      </div>
+    </div>
+
+    <!-- 引入setRem.js -->
+    <script src="../js/setRem.js"></script>
+  </body>
+</html>
