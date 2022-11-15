@@ -100,7 +100,7 @@ password.addEventListener("blur", function () {
 });
 
 // 普通登录功能
-loginBtn.addEventListener("click", function () {
+touch.on(loginBtn, "tap", function () {
   // 当手机号码 验证码 密码 的布尔值都为true时 才能完成
   if (telBool == true && passwordBool == true) {
     if (password.value == window.localStorage.getItem("password")) {
@@ -183,7 +183,7 @@ var timerAuthCode = null;
 var randomNumber = [];
 // 验证码次数 用于判断点击按钮没有
 var indexAuthCode = 0;
-authCodeBtn.addEventListener("click", function (e) {
+touch.on(authCodeBtn, "tap", function (e) {
   e = e || window.event;
   window.event ? (event.cancelBubble = "true") : event.stopPropagation();
   if (authCodeTelBool) {
@@ -231,7 +231,7 @@ authCodeBtn.addEventListener("click", function (e) {
     authCodeMainSpans[1].innerHTML = "请填写正确的手机号";
     // 验证码布尔值返回错误
     authCodeBool = false;
-    document.addEventListener("click", function (e) {
+    touch.on(document, "tap", function (e) {
       e = e || window.event;
       window.event ? (event.cancelBubble = "true") : event.stopPropagation();
       authCodeMainSpans[1].className = "";
@@ -242,7 +242,7 @@ authCodeBtn.addEventListener("click", function (e) {
   }
 });
 
-authCode.addEventListener("click", function (e) {
+touch.on(authCode, "tap", function (e) {
   e = e || window.event;
   window.event ? (event.cancelBubble = "true") : event.stopPropagation();
 });
@@ -293,7 +293,7 @@ authCode.addEventListener("blur", function () {
   }
 });
 // 验证码登录功能
-authCodeLoginBtn.addEventListener("click", function () {
+touch.on(authCodeLoginBtn, "tap", function () {
   // 当手机号码 验证码 的布尔值都为true时 才能完成登录
   if (authCodeTelBool == true && authCodeBool == true) {
     alert("登录成功"); // localStrong
