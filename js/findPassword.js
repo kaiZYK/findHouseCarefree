@@ -63,7 +63,7 @@ var timerAuthCode = null;
 var randomNumber = [];
 // 验证码次数 用于判断点击按钮没有
 var indexAuthCode = 0;
-authCodeBtn.addEventListener("click", function (e) {
+touch.on(authCodeBtn, "tap", function (e) {
   e = e || window.event;
   window.event ? (event.cancelBubble = "true") : event.stopPropagation();
   if (telBool) {
@@ -121,11 +121,11 @@ authCodeBtn.addEventListener("click", function (e) {
     });
   }
 });
-
-authCode.addEventListener("click", function (e) {
+touch.on(authCode, "tap", function (e) {
   e = e || window.event;
   window.event ? (event.cancelBubble = "true") : event.stopPropagation();
 });
+
 authCode.addEventListener("focus", function () {
   spans[1].className = "";
   spans[1].innerHTML = "请输入6位验证码";
@@ -279,7 +279,7 @@ password2.addEventListener("blur", function () {
 });
 
 // 修改已注册手机号的密码
-submitBtn.addEventListener("click", function () {
+touch.on(submitBtn, "tap", function () {
   // 当手机号码 密码 的布尔值都为true时 才能完成修改密码
   if (telBool == true && authCodeBool == true && passwordBool == true) {
     alert("修改密码成功");
