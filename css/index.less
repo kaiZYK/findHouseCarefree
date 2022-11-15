@@ -1,0 +1,300 @@
+// 字体颜色
+@color-black: #000000;
+
+// 背景颜色
+@bgc-white: #ffffff;
+
+.borderBottom(@px:1px,@color:#dcdcdc){
+    border-bottom: @px solid @color;
+}
+/* 大banner图部分 */
+.banner{
+    width: 100%;
+    height: 26rem;
+    background: url(../images/index/banner.png) no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+    /* 搜索部分 */
+    .search {
+        width: 100%;
+        height: 7rem;
+        box-sizing: border-box;
+        padding: 1rem 2rem;
+        position: absolute;
+        bottom: 0;
+        div {
+        width: 100%;
+        height: 80%;
+        background-color: @bgc-white;
+        border: 0.1rem solid #cccccc;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        input {
+            flex: 1;
+            height: 2rem;
+            outline: none;
+            border: none;
+            font-size: 1.4rem;
+        }
+        a {
+            width: 4.5rem;
+            height: 100%;
+            text-align: center;
+            line-height: 5rem;
+            img {
+            width: 2rem;
+            }
+        }
+        }
+    }
+}
+
+/* 导航栏部分 */
+.nav{
+    ul{
+        height: 13rem;
+        background-color: #ff8a00;
+        display: flex;
+        justify-content: space-around;
+        li{
+            width: 7rem;
+            height: 7rem;
+            margin-top: 2.3rem;
+            a{
+                width: 6.5rem;
+                height: 6.5rem;
+                display: inline-block;
+                color: #ffffff;
+                padding-top: 7rem;
+                box-sizing: border-box;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            &:nth-of-type(1) a{
+                background: url(../images/index/index_03.png) no-repeat 0 0;
+                background-size: contain;
+            }
+            &:nth-of-type(2) a{
+                background: url(../images/index/index_05.png) no-repeat 0 0;
+                background-size: contain;
+            }
+            &:nth-of-type(3) a{
+                background: url(../images/index/index_07.png) no-repeat 0 0;
+                background-size: contain;
+            }
+            &:nth-of-type(4) a{
+                background: url(../images/index/index_09.png) no-repeat 0 0;
+                background-size: contain;
+            }
+        }
+    }
+}
+
+/* 大banner2图部分 */
+.banner2{
+    background-color: #ffffff;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    img{
+        width: 100%;
+    }
+}
+
+/* 热门房源部分 */
+.hotHouse{
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    h3{
+        background-color: #ff8a00;
+        color: #ffffff;
+        padding: 1rem 0 1rem 2rem;
+        font-size: 2rem;
+        span{
+            font-size: 1.2rem;
+        }
+    }
+    .recommend{
+        background-color: #ffffff;
+        .borderBottom();
+        padding: 0 2rem;
+        .house{
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            ul {
+                width: 100%;
+                height: auto;
+                li {
+                  width: 100%;
+                  height: 16rem;
+                  box-sizing: border-box;
+                  padding: 2.5rem 0rem;
+                  padding-bottom: 2rem;
+                  border-bottom: 0.2rem solid #ffa3a3;
+                  &:last-of-type {
+                    border-bottom: none;
+                  }
+                  a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    color: @color-black;
+                    img {
+                      width: 8.5rem;
+                      height: 8.5rem;
+                      margin-right: 1.5rem;
+                      margin-top: 1.5rem;
+                    }
+                    div {
+                      flex: 1;
+                      height: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      align-content: stretch;
+                      h2,
+                      p {
+                        width: 100%;
+                        height: 1rem;
+                        font-size: 1.4rem;
+                        &:nth-of-type(1) span{
+                            margin-left: 7.4rem;
+                            font-weight: 600;
+                            color: #ff8a00;
+                        } 
+                        &:nth-of-type(2){
+                            display: flex;
+                            color: #999999;
+                            justify-content: space-between;
+                        }
+                        &:nth-of-type(2) span{
+                            color: #999999;
+                        }
+                      }
+                      h2 {
+                        height: 2.5rem;
+                        font-size: 2.1rem;
+                        overflow: hidden;
+                        width: 22rem;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                      }
+                      p:nth-of-type(3) {
+                        font-size: 1.4rem;
+                        color: #849aae;
+                        span{
+                            display: inline-block;
+                            background-color: #f4f7f9;
+                            padding: 0.7rem;
+                            font-size: 1.3rem;
+                            margin-right: 1rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+        }
+    }
+}
+
+/* 热门关注 友情链接 */
+.hotFocus{
+    // height: 30rem;
+    border-top: 0.2rem solid #e7e7e7;
+    background-color: #ffffff;
+    .list{
+        display: flex;
+        font-size: 2rem;
+        line-height: 7rem;
+        .borderBottom(@color:#ffbc6f);
+        li{
+            flex: 1;
+            text-align: center;
+            a{
+                color: #666666;
+            }
+        }
+        .active{
+            .borderBottom(@color:#ff8a00);
+            a{
+                color: #ff8a00;
+            }
+        }
+    }
+    .title{
+        display: flex;
+        ul{
+            flex: 1;
+            margin: 2rem 2rem;
+            li{
+                line-height: 3rem;
+                a{
+                    color: #666666;
+                    font-size: 1.4rem;
+                }
+                
+            }
+        }
+    }
+}
+
+/* 广告 免费下载  */
+.freeDownload{
+    width: 100%;
+    height: 5.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-left: 2rem;
+    display: flex;
+    .close{
+        width: 1.7rem;
+        height: 1.7rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .left{
+        display: flex;
+        flex: 2;
+        justify-content: space-around;
+        .icon{
+            img{
+                width: 4rem;
+                height: 4rem;
+                margin-top: 0.7rem;
+            }
+        }
+        .text{
+            margin-left: -4rem;
+            margin-top: 0.4rem;
+            p:nth-of-type(1){
+                font-size: 2rem;
+                color: @bgc-white;
+            }
+            p:nth-of-type(2){
+                font-size: 1.4rem;
+                color: @bgc-white;
+            }
+        }
+    }
+    .right{
+        flex: 1;
+        line-height: 5.5rem;
+        background-color: #ff8a00;
+        a{
+            display: inline-block;
+            padding-left: 2.2rem;
+            box-sizing: border-box;
+            width: 100%;
+            height: 5.5rem;
+            color: white;
+            font-size: 1.6rem;
+        }
+    }
+}
