@@ -57,31 +57,39 @@
       <!-- 普通登录主体 -->
       <div class="membersMain allMain">
         <div>
-          <input type="tel" placeholder="请输入手机号码" />
+          <input type="tel" placeholder="请输入手机号码" class="tel" />
           <span></span>
         </div>
         <div>
-          <input type="password" placeholder="请输入密码" />
+          <input type="password" placeholder="请输入密码" class="password" />
           <span></span>
         </div>
         <div class="btn">
-          <button>立即登录</button>
+          <button class="login-btn">立即登录</button>
         </div>
       </div>
 
       <!-- 验证码登录主体 -->
       <div class="authCodeMain allMain">
         <div>
-          <input type="tel" placeholder="请输入手机号码" />
+          <input
+            type="tel"
+            placeholder="请输入手机号码"
+            class="auth-code-tel"
+          />
           <span></span>
-          <button>发送验证码</button>
+          <button class="auth-code-btn">发送验证码</button>
         </div>
         <div>
-          <input type="text" placeholder="请输入短信中的验证码" />
+          <input
+            type="text"
+            placeholder="请输入短信中的验证码"
+            class="auth-code"
+          />
           <span></span>
         </div>
         <div class="btn">
-          <button>验证并登录</button>
+          <button class="auth-code-login-btn">验证并登录</button>
         </div>
       </div>
 
@@ -96,7 +104,7 @@
     <script src="../js/setRem.js"></script>
     <!-- 引入touch库 -->
     <script src="../js/touch.min.js"></script>
-    <!-- 引入index.js -->
+    <!-- 引入login.js -->
     <script src="../js/login.js"></script>
   </body>
 </html>
